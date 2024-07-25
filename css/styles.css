@@ -11586,10 +11586,12 @@ html {
   margin-top: 5vw;
   max-height: 40rem;
   max-width: 40rem;
+  overflow: hidden;
 }
 .profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
+  height: 60vw;
+  /* max-height: 23.9rem; */
+  width: 25rem;
   position: absolute;
   bottom: 0;
   left: 50%;
