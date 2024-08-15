@@ -4177,6 +4177,31 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
+
+.github-link{
+  text-decoration: underline;
+  color: black;
+}
+
+.github-link:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.live-link{
+  text-decoration: underline;
+  color: black;
+}
+
+.live-link:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.blackBG{
+  width: 350px;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -11589,13 +11614,13 @@ html {
   overflow: hidden;
 }
 .profile .profile-img {
-  height: 60vw;
+  height: 100%;
   /* max-height: 23.9rem; */
-  width: 25rem;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(14%);
 }
 .profile .dots-1 {
   position: absolute;
