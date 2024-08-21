@@ -11605,8 +11605,8 @@ html {
 
 .profile {
   position: relative;
-  height: 75vw;
-  width: 75vw;
+  height: 55vw;
+  width: 55vw;
   border-radius: 5vw;
   margin-top: 5vw;
   max-height: 40rem;
@@ -11614,8 +11614,7 @@ html {
   overflow: hidden;
 }
 .profile .profile-img {
-  /* height: 100%; */
-  height: 27rem;
+  height: 115%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -11661,31 +11660,6 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    height: 60vw;
-    width: 60vw;
-  }
-  .profile .profile-img {
-    height: 65vw;
-  }
-  .profile .dots-1 {
-    width: 3vw;
-    right: 1.5vw;
-  }
-  .profile .dots-2 {
-    width: 3vw;
-    right: -4vw;
-  }
-  .profile .dots-3 {
-    width: 3vw;
-    left: 1.5vw;
-  }
-  .profile .dots-4 {
-    width: 3vw;
-    left: -4vw;
-  }
-}
-@media (min-width: 768px) {
-  .profile {
     height: 50vw;
     width: 50vw;
   }
@@ -11709,13 +11683,38 @@ html {
     left: -4vw;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .profile {
     height: 40vw;
     width: 40vw;
   }
   .profile .profile-img {
-    height: 45vw;
+    height: 44vw;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
+  }
+}
+@media (min-width: 992px) {
+  .profile {
+    height: 30vw;
+    width: 30vw;
+  }
+  .profile .profile-img {
+    height: 34vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
@@ -11736,11 +11735,11 @@ html {
 }
 @media (min-width: 1200px) {
   .profile {
-    height: 35vw;
-    width: 35vw;
+    height: 25vw;
+    width: 25vw;
   }
   .profile .profile-img {
-    height: 40vw;
+    height: 29vw;
   }
   .profile .dots-1 {
     width: 1.5vw;
