@@ -11758,3 +11758,23 @@ html {
     left: -2vw;
   }
 }
+
+.spinner{
+  scale: 200%;
+  /* color: red; */
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(720deg);
+  }
+}
