@@ -47,14 +47,16 @@
                     </script>
                     <script>
                         async function name(params) {
-                            let s = 'https://elot.onrender.com'
-                            let v = await fetchCapstone(s)
-                        if(v > 0){
-                            await window.open(s, '_blank').focus()
-                            location.assign('/projects.html')
-                        } else{
-                            location.assign('/failedCapstone.html')
-                        }
+                            setTimeout(async () => {
+                                let s = 'https://elot.onrender.com'
+                                let v = await fetchCapstone(s)
+                                if (v > 0) {
+                                    await window.open(s, '_blank').focus()
+                                    location.assign('/projects.html')
+                                } else {
+                                    location.assign('/failedGroup.html')
+                                }
+                            }, 2000)
                         }
                         name()
                     </script>
