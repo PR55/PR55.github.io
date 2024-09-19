@@ -39,7 +39,7 @@
                <div class="row gx-5 justify-content-center">
                 <div class="row col-xl-6 align-items-center justify-content-center">
                     <div class="row justify-content-center mb-5">
-                        <h1 class="mb-0 mt-auto row justify-content-center">Verifying ELot Connection...</h1>
+                        <h1 class="mb-0 mt-auto row justify-content-center">Verifying HepLeak Connection...</h1>
                     </div>
                     <div class="spinner-border spinner mb-5" role="status">
                       </div>
@@ -50,7 +50,7 @@
                             let s = 'https://heapleak.onrender.com'
                             let v = await fetchCapstone(s)
                         if(v > 0){
-                            window.open(s)
+                            await window.open(s, '_blank').focus()
                             location.assign('/projects.html')
                         } else{
                             location.assign('/failedGroup.html')

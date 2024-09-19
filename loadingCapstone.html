@@ -50,7 +50,7 @@
                             let s = 'https://elot.onrender.com'
                             let v = await fetchCapstone(s)
                         if(v > 0){
-                            window.open(s)
+                            await window.open(s, '_blank').focus()
                             location.assign('/projects.html')
                         } else{
                             location.assign('/failedCapstone.html')
