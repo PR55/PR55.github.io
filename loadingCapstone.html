@@ -39,15 +39,15 @@
                <div class="row gx-5 justify-content-center">
                 <div class="row col-xl-6 align-items-center justify-content-center">
                     <div class="row justify-content-center mb-5">
-                        <h1 class="mb-0 mt-auto row justify-content-center">Verifying ELot Connection...</h1>
+                        <h1 class="mb-5 mt-auto row justify-content-center">Verifying ELot Connection...</h1>
+                        <h3 class="mb-3 mt-auto row justify-content-center">Watch out for blocked pop ups!</h3>
                     </div>
                     <div class="spinner-border spinner mb-5" role="status">
                       </div>
                     <script src="./js/scripts.js">
                     </script>
                     <script>
-                        async function name(params) {
-                            setTimeout(async () => {
+                        setTimeout(async () => {
                                 let s = 'https://elot.onrender.com'
                                 let v = await fetchCapstone(s)
                                 if (v > 0) {
@@ -57,8 +57,6 @@
                                     location.assign('/failedGroup.html')
                                 }
                             }, 2000)
-                        }
-                        name()
                     </script>
                 </div>
                </div>
