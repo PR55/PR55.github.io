@@ -46,25 +46,37 @@
             <div class="row gx-5 justify-content-center">
                 <div class="row col-xl-6 align-items-center justify-content-center">
                     <div class="row justify-content-center mb-5">
-                        <h1 class="mb-5 mt-auto row justify-content-center">Verifying HeapLeak Connection...</h1>
-                        <h3 class="mb-3 mt-auto row justify-content-center">Watch out for blocked pop ups!</h3>
+                        <h1 class="mb-5 mt-auto row justify-content-center" id="verify">Verifying HeapLeak Connection...</h1>
+                        <h1 class="Hidden" id="success">HeapLeak is active!</h1>
                     </div>
-                    <div class="spinner-border spinner mb-5" role="status">
+                    <div class="spinner-border spinner mb-5" role="status" id="spinner">
                     </div>
                     <script src="./js/scripts.js">
                     </script>
                     <script>
+                        toggleButton("safeRepo");
                         setTimeout(async () => {
-                                let s = 'https://heapleak.onrender.com'
-                                let v = await fetchCapstone(s)
-                                if (v > 0) {
-                                    await window.open(s, '_blank').focus()
-                                    location.assign('/projects.html')
-                                } else {
-                                    location.assign('/failedGroup.html')
-                                }
-                            }, 2000)
+                            let s = 'https://heapleak.onrender.com'
+                            let v = await fetchCapstone(s)
+                            if (v > 0) {
+                                setCheck(true);
+                                toggleButton("safeRepo");
+                            } else {
+                                location.assign('/failedGroup.html')
+                            }
+                        }, 2000)
                     </script>
+
+                </div>
+            </div>
+            <div class="Hidden" id="safeRepo">
+                <div class="row col-xl-6 align-items-center">
+                    <a class="btn btn-primary px-4 py-3 mb-4" target="_blank"
+                        href="https://heapleak.onrender.com"
+                        onclick="toProjectsPage()"
+                        >
+                        Open HeapLeak in New Tab
+                    </a>
                 </div>
             </div>
         </section>

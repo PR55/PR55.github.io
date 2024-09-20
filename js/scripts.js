@@ -11,6 +11,8 @@ AbortSignal.timeout ??= async function timeout(ms) {
     return ctrl.signal
 }
 
+let check = false
+
 let fetchCapstone = async (s = '') => {
     console.log('b')
     try{
@@ -25,4 +27,32 @@ let fetchCapstone = async (s = '') => {
     }
 
 
+}
+
+function setCheck(val){
+    check = val
+}
+
+function readCheck(){
+    return check
+}
+
+function toggleButton(id){
+    let item = document.getElementById(id)
+    if(item){
+        if(!check){
+            item.classList = "Hidden"
+            document.getElementById("spinner").classList = "spinner-border spinner mb-5"
+        } else {
+
+            item.classList = "row gx-5 justify-content-center"
+            document.getElementById("spinner").classList = "Hidden"
+            document.getElementById("verify").classList = "Hidden"
+            document.getElementById("success").classList = "mb-5 mt-auto row justify-content-center"
+        }
+    }
+}
+
+function toProjectsPage(){
+    location.assign('/projects.html')
 }

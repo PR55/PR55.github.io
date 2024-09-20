@@ -11778,3 +11778,7 @@ html {
     transform: rotate(720deg);
   }
 }
+
+.Hidden{
+  display: none;
+}
